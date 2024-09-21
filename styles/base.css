@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    flex-direction: column; 
+}
+
+.header-title  {
+    background-color: #1d4f71;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-title h1{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+.highlight-name {
+    color: yellow; 
+}
+
+.header-menu {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;    
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap:5px;
+    justify-content: space-around;
+    padding:0 10px;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    border: 1px solid #fff;
+}
+
+main {
+    max-width: 2000px;
+    margin: 40px 10px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.card-aboutme, .card-web {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.web-title, .main-title  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: #1d4f71;
+    padding: 10px;
+    text-align: center;
+}
+
+.web-title h2, .main-title h2 {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+.card-aboutme img, .second-paragraph img {
+    max-width: 100%;
+    border-radius: 4px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.card-aboutme p, h2 {
+    padding: 20px;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-paragraph, .second-paragraph {
+    display: flex; 
+    align-items: center; 
+}
+
+.main-paragraph img {
+    margin-left: auto; 
+    width: 100px; 
+}
+
+.second-paragraph img {
+    margin-left: auto; 
+    width: 200px; 
+}
+
+.main-paragraph p, .second-paragraph p {
+    flex: 1; 
+    margin-right: 20px; 
+}
+
+.web-info {
+   max-width: 400px;
+   margin: 20px auto;
+   padding: 50px 40px;   
+}
+
+.web-info ul {
+    list-style-type:disc;        
+    padding: 10px;                   
+    margin: 0;                   
+}
+
+
+.web-info ul li {
+    margin: 10px 0;              
+}
+
+.web-info a {
+    color:blue;              
+    text-decoration: none;         
+    transition: color 0.3s ease;  
+    display: block;
+    padding: 10px;
+}
+
+.web-info a:hover {
+    color: #ff6347;               
+    text-decoration: underline;   
+}
+
+
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 5px 0;
+}
