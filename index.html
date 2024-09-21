@@ -5,56 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore key concepts in WDD 131 - Dynamic Web Fundamentals with Priscilla Valverde Alvarez. This page covers HTML, CSS, JavaScript, and responsive design for building dynamic websites.">
     <meta name="author" content="Priscilla Valverde Alvarez">
-    <title>WDD 131 - Dynamic Web Fundamentals - Priscilla Valverde Alvarez</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Priscilla Valverde Álvarez</title>
     <link rel="stylesheet" href="styles/base.css">
-    <script src="getdates.js" defer></script> 
+    <script src="scripts/getdates.js" defer></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="header-title">
-            <h1>WDD 131 - Dynamic Web Fundamentals - <span class="highlight-name">Priscilla Valverde Álvarez</span></h1>
-        </div>
-        <div class="header-menu">
-            <nav>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/priscilla-valverde-alvarez/">LinkedIn</a></li>
-                    <li><a href="https://byui.instructure.com/">I-Learn</a></li>
-                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/1?lang=eng">Scripture</a></li>
-                    <li><a href="">Final Project</a></li>
-                </ul>
-            </nav>
-        </div>    
-    </header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - <span class="highlight-name">Priscilla Valverde Álvarez</span></h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/priscilla-valverde-alvarez/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/1?lang=eng&id=p#39#p39">Scripture</a></li>
+                <li><a href="">Final Project</a></li>
+            </ul>
+        </nav>    
+    </header>         
     <main>
-        <section class="card-aboutme">
-            <div class="main-title">
-                <h2>About Me</h2>
-            </div>
-            <div class="main-paragraph">
-                <p>My name is Priscilla Valverde Álvarez. I was born in Costa Rica. I am currently working as junior developer assistant and I'm aspiring to be a web developer currently studying Dynamic Web Fundamentals as part of 
-                    my WDD 131 course. I enjoy blending creativity with technical skills to design engaging web experiences. With a strong interest in HTML, CSS, and JavaScript.</p>
-                    <img src="images/profile.jpeg" alt="Profile" width="100" height="auto">    
-            </div>
-            <h2>San Jose, Costa Rica</h2>
-            <div class="second-paragraph">
-                <img src="images/flag.jpg" alt="Official Flag of Costa Rica" width="500" height="auto">
-                    
-                <p>Costa Rica is a small Central American country known for its rich biodiversity, stunning natural landscapes, and commitment to environmental conservation. With coastlines on both the Pacific Ocean and the Caribbean Sea,
+        <section class="card" id="card-1">
+            <h2>About Me</h2>
+            <img src="images/profile.jpeg" alt="Profile" class="right-img"> 
+            <p class="intro">My name is Priscilla Valverde Álvarez. I was born in Costa Rica. I am currently working as junior developer assistant and I'm aspiring to be a web developer currently studying Dynamic Web Fundamentals as part of 
+                    my WDD 131 course. I enjoy blending creativity with technical skills to design engaging web experiences. With a strong interest in HTML, CSS, and JavaScript.</p>               
+            <h3>San Jose, Costa Rica</h3>
+            <img src="images/flag.jpg" alt="Official Flag of Costa Rica" class="left-img">
+            <p class="country">Costa Rica is a small Central American country known for its rich biodiversity, stunning natural landscapes, and commitment to environmental conservation. With coastlines on both the Pacific Ocean and the Caribbean Sea,
                     it offers pristine beaches, lush rainforests, and towering volcanoes.</p>
-            </div>
         </section>
-        <section class="card-web">
-            <div class="web-title">
-                <h2>Web Dev Resources</h2>
-            </div>
-            <div class="web-info">
-                <ul>
-                <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
-                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
-                <li><a href="https://www.freecodecamp.org/">Free Code Camp</a></li>
+        <section class="card" id="card-2">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                <li><a href="https://www.freecodecamp.org/" target="_blank">Free Code Camp</a></li>
                 <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
-                </ul>
-            </div>
+            </ul>
         </section>
     </main>
     <footer>
@@ -62,13 +50,6 @@
             &copy; <span id="currentyear"></span> 🌼 Priscilla Valverde Álvarez, Costa Rica 🌼
         </p>
         <p id="lastModified">
-            <script>
-                const currentYear = new Date().getFullYear();
-                document.getElementById('currentyear').textContent = currentYear;
-            
-                const lastModified = document.lastModified;
-                document.getElementById('lastModified').textContent = "Last Updated: " + lastModified;
-            </script>
         </p>
     </footer>
 </body>
