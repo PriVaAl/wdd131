@@ -23,8 +23,3 @@ month.innerHTML = `getMonth(): <span class="highlight">${today.getMonth() + 1}</
 day.innerHTML = `getDate(): <span class="highlight">${today.getDate()}</span>`;
 dayofweek.innerHTML = `getDay(): <span class="highlight">${today.getDay()}</span>`;
 
-// Set the copyright year in the footer
-document.getElementById("currentyear").textContent = today.getFullYear();
-
-// Display the last modified date
-document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;

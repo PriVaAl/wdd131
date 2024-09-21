@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="header-title">
-            <h1>WDD 131 - Dynamic Web Fundamentals - <span class="highlight-name">Priscilla Valverde Alvarez</span></h1>
+            <h1>WDD 131 - Dynamic Web Fundamentals - <span class="highlight-name">Priscilla Valverde Álvarez</span></h1>
         </div>
         <div class="header-menu">
             <nav>
@@ -31,7 +31,7 @@
                 <h2>About Me</h2>
             </div>
             <div class="main-paragraph">
-                <p>My name is Priscilla Valverde Alvarez. I was born in Costa Rica. I am currently working as junior developer assistant and I'm aspiring to be a web developer currently studying Dynamic Web Fundamentals as part of 
+                <p>My name is Priscilla Valverde Álvarez. I was born in Costa Rica. I am currently working as junior developer assistant and I'm aspiring to be a web developer currently studying Dynamic Web Fundamentals as part of 
                     my WDD 131 course. I enjoy blending creativity with technical skills to design engaging web experiences. With a strong interest in HTML, CSS, and JavaScript.</p>
                     <img src="images/profile.jpeg" alt="Profile" width="100" height="auto">    
             </div>
@@ -50,8 +50,8 @@
             <div class="web-info">
                 <ul>
                 <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
-                <li><a href="https://www.w3schools.com/">W3Schools</a></li>
-                <li><a href="https://www.freecodecamp.org/">freeCodeCamp</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://www.freecodecamp.org/">Free Code Camp</a></li>
                 <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
                 </ul>
             </div>
@@ -59,9 +59,17 @@
     </main>
     <footer>
         <p>
-            &copy; <span id="currentyear"></span> Priscilla Valverde Alvarez, Costa Rica.
+            &copy; <span id="currentyear"></span> 🌼 Priscilla Valverde Álvarez, Costa Rica 🌼
         </p>
-        <p id="lastModified"></p>
+        <p id="lastModified">
+            <script>
+                const currentYear = new Date().getFullYear();
+                document.getElementById('currentyear').textContent = currentYear;
+            
+                const lastModified = document.lastModified;
+                document.getElementById('lastModified').textContent = "Last Updated: " + lastModified;
+            </script>
+        </p>
     </footer>
 </body>
 </html>
