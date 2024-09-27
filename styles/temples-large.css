@@ -1,55 +1,82 @@
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 740px) {
     header {
         display: flex;
+        align-items: center;
         justify-content: space-between;
-        padding: 20px 40px;
+        padding: 10px 20px;
     }
 
-    #hamburguer {
+    h1 {
+        font-weight: 400;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    #hamburger {
         display: none;
     }
 
-    nav { 
-        display: block;
+    .navigation { 
+        flex: 1;
+        text-align: right;
     }
 
-    nav ul {
-        display: flex;
-        justify-content: space-between;
+    .navigation ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
     }
 
-    nav a { 
-        padding: 0.5rem 2rem;
+    .navigation li {
+        display: inline-block;
+        margin-left: 30px;
+    }
+    
+    .navigation a { 
+        padding: 10px;
         color: white;
         text-decoration: none;
+        display: inline-block;
     }
 
-    nav a:hover {
-        background-color: #6d7585;
-        border-radius: 5px;
-        text-decoration: underline;
+}
+
+@media (max-width: 740px) {
+    
+    main {
+        grid-template-columns: repeat(1, 1fr);
     }
+
+    h2 {
+        grid-column: span 1;
+    }
+    
+}
+
+@media (min-width: 741px) and (max-width: 1024px) {
 
     main {
-        /* Grid Layout */
-        max-width: 1200px;
-        margin: 2rem auto;
-        padding: 0 2rem;
-        display: grid;
-        grid-gap: 1.5rem;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
     }
+
+    h2 {
+        grid-column: span 2;
+    }
+    
 }
 
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #3d1b64;
-    color: white;
-    font-size: 0.9rem;
-}
+@media (min-width: 1025px) {
 
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    h2 {
+        grid-column: span 3;
+    }
+    
+}
 /* For last modified and year scripts */
 #lastModified, #currentyear {
     display: inline-block;
