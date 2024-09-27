@@ -1,0 +1,56 @@
+
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+
+    #hamburguer {
+        display: none;
+    }
+
+    nav { 
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav a { 
+        padding: 0.5rem 2rem;
+        color: white;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        background-color: #6d7585;
+        border-radius: 5px;
+        text-decoration: underline;
+    }
+
+    main {
+        /* Grid Layout */
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 2rem;
+        display: grid;
+        grid-gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #3d1b64;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* For last modified and year scripts */
+#lastModified, #currentyear {
+    display: inline-block;
+}
