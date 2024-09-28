@@ -54,7 +54,7 @@
     
 }
 
-@media (min-width: 741x) {
+@media (min-width: 741px) {
     
     main {
         display: grid;
