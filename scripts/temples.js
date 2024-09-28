@@ -31,6 +31,18 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
         
     
+        const hamburgerItemText = event.target.textContent.trim();
+        headerDynamic.textContent = hamburgerItemText;
+        
+        localStorage.setItem('headerDynamicText', hamburgerItemText);
+
+        const href = event.target.getAtribute('href');
+        setTimeout(() => {
+            window.location.href = href;
+        }, 100);
     }
-}
-)
+
+    hamburgerItems.forEach(item => {
+        item.addEventListener('click', handleHamburgerItemClick);
+    });
+});
