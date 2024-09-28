@@ -42,14 +42,6 @@
 
 }
 
-@media (min-width: 7401x) {
-    
-    main {
-        display: grid;
-    }
-    
-}
-
 @media (max-width: 740px) {
     
     main {
@@ -58,6 +50,14 @@
 
     h2 {
         grid-column: span 1;
+    }
+    
+}
+
+@media (min-width: 741x) {
+    
+    main {
+        display: grid;
     }
     
 }
