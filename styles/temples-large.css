@@ -57,6 +57,7 @@
 @media (min-width: 741px) and (max-width: 1024px) {
 
     main {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -69,6 +70,7 @@
 @media (min-width: 1025px) {
 
     main {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
 
