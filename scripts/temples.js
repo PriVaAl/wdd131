@@ -5,15 +5,16 @@ year.textContent = `${today.getFullYear()}`;
 const lastMofifiedElement = document.querySelector("#lastModified")
 lastMofifiedElement.textContent = "Last Modification: " + document.lastModified;
 
-const hamburgerButton = document.getElementById('#hamburger');
+const hamButton = document.querySelector('#hamburger');
 const navigation = document.querySelector('.navigation');
 
-hamburgerButton.addEventListener('click', () => {
+hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
-    hamburgerButton.classList.toggle('open');
+    hambButton.classList.toggle('open');
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+   
     const headerDynamic = document.getElementById('headerDynamic');
     const defaultHeaderText = 'Home';
 
