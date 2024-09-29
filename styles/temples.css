@@ -11,39 +11,45 @@ body {
 
 header {
     background-color: #3d1b64;
-    color: white;
     padding: 20px;
     display: grid;
     grid-gap: 1rem;
+}
+
+header, main {
     margin: 0 auto;
 }
 
-header h1 {
+h1 {
     text-align: left;
     color: white;
 }
 
-#hamburger {
+#menu {
     font-size: 1.5rem;
     background: none;
     border: 0;
-    color: white;
+    color: #000;
     position: absolute;
     top: 1rem;
     right: 1rem;
 }
 
-#hamburger::before {
+#menu::before {
     content: "☰";
+    color:white;
+    margin: auto;
 }
 
-#hamburger.open::before {
+#menu.open::before {
     content: "X";
+    color: white;
+    margin: auto;
 }
 
-
-ul {
-    list-style-type: none;
+nav {
+    display: flex;
+    flex-direction: column;
 }
 
 .navigation {
@@ -73,6 +79,10 @@ ul {
     display: block;
 }
 
+ul {
+    list-style-type: none;
+}
+
 main {
     display: grid;
     gap: 16px;
@@ -84,7 +94,6 @@ main {
 h2 {
     grid-column: span 3;
     font-size: 1.5rem;
-    color: #2a2d34;
     text-align: center;
     margin: 2rem;
 }
@@ -110,7 +119,6 @@ img {
 }
 
 figcaption {
-    font-style: italic;
     color: #555;
     margin-top: 5px;
     text-align: center;

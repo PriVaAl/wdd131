@@ -1,5 +1,5 @@
 
-@media screen and (min-width: 740px) {
+@media (min-width: 740px) {
     header {
         display: flex;
         align-items: center;
@@ -13,7 +13,7 @@
         text-align: left;
     }
 
-    #hamburger {
+    #menu {
         display: none;
     }
 
@@ -86,7 +86,4 @@
     }
     
 }
-/* For last modified and year scripts */
-#lastModified, #currentyear {
-    display: inline-block;
-}
+

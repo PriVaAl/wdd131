@@ -5,7 +5,7 @@ year.textContent = `${today.getFullYear()}`;
 const lastMofifiedElement = document.querySelector("#lastModified")
 lastMofifiedElement.textContent = "Last Modification: " + document.lastModified;
 
-const hamButton = document.querySelector('#hamburger');
+const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
 hamButton.addEventListener('click', () => {
@@ -26,16 +26,16 @@ document.addEventListener('DOMContentLoaded', function() {
         headerDynamic.textContent = defaultHeaderText;
     }
 
-    const hamburgerItems = document.querySelectorAll('.navigation ul li a');
+    const menuItems = document.querySelectorAll('.navigation ul li a');
 
-    function handleHamburgerItemClick(event) {
+    function handleMenuItemClick(event) {
         event.preventDefault();
         
     
-        const hamburgerItemText = event.target.textContent.trim();
-        headerDynamic.textContent = hamburgerItemText;
+        const menuItemText= event.target.textContent.trim();
+        headerDynamic.textContent = menuItemText;
         
-        localStorage.setItem('headerDynamicText', hamburgerItemText);
+        localStorage.setItem('headerDynamicText', menuItemText);
 
         const href = event.target.getAtribute('href');
         setTimeout(() => {
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 100);
     }
 
-    hamburgerItems.forEach(item => {
-        item.addEventListener('click', handleHamburgerItemClick);
+    menuItems.forEach(item => {
+        item.addEventListener('click', handleMenuItemClick);
     });
 });
