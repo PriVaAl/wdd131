@@ -1,0 +1,68 @@
+:root {
+    --red: rgba(210, 16, 52, 1);
+    --gold: rgb(245, 218, 65);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--red);
+}
+
+header, footer {
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+aside {
+    background-color: var(--gold);
+    padding: 0.5rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    padding: 1rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: .5rem;
+}
+
+.card h2 {
+    text-align: center;
+}
+
+
+.column {
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+}
+
+.label {
+    font-weight: 700;
+    font-size: 0.80rem;
+    text-align: right;
+}
+
+.value {
+    font-size: .85rem;
+}
+
+
