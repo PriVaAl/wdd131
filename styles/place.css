@@ -1,5 +1,5 @@
 :root {
-    --red: rgba(210, 16, 52, 1);
+    --red: rgb(158, 51, 58);
     --gold: rgb(245, 218, 65);
     --border: 1px rgb(0, 0, 0, .1);
 }
@@ -102,7 +102,8 @@ footer {
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    color:#fdfdfd;
+    Color: #FFFFFF;
+    
 
 }
 @media (min-width: 750px) {
