@@ -95,7 +95,7 @@ svg {
 
 
 #lastModified {
-    color: white;
+    color:  #380000;
     font-size: 1rem;
 }
 
@@ -103,6 +103,7 @@ footer {
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    color: #380000;
 
 }
 @media (min-width: 750px) {
