@@ -38,13 +38,10 @@ h1 {
 #menu::before {
     content: "☰";
     color:white;
-    margin: auto;
 }
 
 #menu.open::before {
     content: "X";
-    color: white;
-    margin: auto;
 }
 
 nav {
@@ -55,7 +52,6 @@ nav {
 .navigation {
     display: flex;
     flex-direction: column;
-    list-style: none;
     background-color: #3d1b64;
     color: white;
 }
@@ -99,23 +95,17 @@ h2 {
 }
 
 figure {
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    max-width: 100%;
-    height: 100%;
-
 }
 
 img {
     width: 100%;
     height: auto;
     border: 2px solid lightgray;
-    display: block;
 }
 
 figcaption {
@@ -126,12 +116,10 @@ figcaption {
 
 footer {
     text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
     background-color: #3d1b64;
     color: white;
     font-size: 15px;
-    height: auto;
 }
 
 footer p {
