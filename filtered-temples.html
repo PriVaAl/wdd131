@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore key concepts in WDD 131 - Dynamic Web Fundamentals with Priscilla Valverde Álvarez to apply the concepts presented in the temple picture album page that is responsive in small and larger views with a hamburguer menu.">
+    <meta name="author" content="Priscilla Valverde Alvarez">
+    <title>WDD 131 - Dynamic Web Fundamentals - Temple Album- Priscilla Valverde Álvarez</title>
+    
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2  id="headerDynamic"></h2>
+        <div class="res-grid"> 
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> 🌼 Priscilla Valverde Álvarez, Costa Rica 🌼
+        </p>
+        <p id="lastModified">
+        </p>
+    </footer>
+</body>
+</html>
