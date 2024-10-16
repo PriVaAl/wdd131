@@ -1,0 +1,183 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #00646F;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #00646F;
+    color: #ffffff;
+    padding: 20px;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+header, main {
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: left;
+    color: white;
+}
+#menu {
+    font-size: 1.5rem;
+    background: none;
+    border: 0;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+    color:white;
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.navigation a {
+    display: none;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color: #CA910D;
+    border-radius: 5px;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.open a {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2 {
+    font-family: 'Georgia', serif;
+    color: #00646F; 
+}
+
+main {
+    display: grid;
+    gap: 16px;
+    max-width: 1200px;
+    margin-bottom: 2rem;
+    padding: 16px;
+}
+
+section {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+footer {
+    background-color: #00646F;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Desktop View Styles */
+@media (min-width: 740px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation { 
+        flex: 1;
+        text-align: right;
+    }
+
+    .navigation li {
+        display: inline-block;
+        margin-left: 30px;
+    }
+    
+    .navigation a { 
+        padding: 10px;
+        display: inline-block;
+    }
+
+}
+
+@media (max-width: 740px) {
+    
+    main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    h2 {
+        grid-column: span 1;
+    }
+    
+}
+
+@media (min-width: 741px) and (max-width: 1024px) {
+
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h2 {
+        grid-column: span 2;
+    }
+    
+}
+
+@media (min-width: 1025px) {
+
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    h2 {
+        grid-column: span 3;
+    }
+    
+}

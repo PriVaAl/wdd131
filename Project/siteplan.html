@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Heritage Kitchen is a digital hub celebrating culinary traditions with a collection of personal recipes from various ethnicities, connecting users with rich culinary heritage.">
-    <meta name="author" content="Your Name Here">
-    <title>Heritage Kitchen - Celebrating Culinary Traditions</title>
-    <link rel="stylesheet" href="">
+    <meta name="author" content="Priscilla Valverde">
+    <title>Site Plan | Priscilla Valverde |  WDD 131 - Dynamic Web Fundamentals</title>
+    <link rel="stylesheet" href="styles/siteplan.css">
     <script src="" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,15 @@
 </head>
 <body>
     <header>
-        <h1>Site Plan for Heritage Kitchen</h1>
+        <h1>Heritage Kitchen</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Places</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Your Recipe</a></li>
+            </ul>
+        </nav>        
     </header>
 
     <main>
@@ -32,31 +40,61 @@
 
         <section>
             <h2>Scenarios</h2>
-            <p>1. What are some traditional recipes from my cultural background?</p>
-            <p>2. How can I filter recipes based on meal type or cultural origin?</p>
+            <ul>
+                <li>1. What are some traditional recipes from my cultural background?</li>
+                <li>2. How can I filter recipes based on meal type or cultural origin?</li>
+            </ul>
         </section>
 
         <section>
             <h2>Color Schema</h2>
-            <p><strong>Primary Color:</strong> <span style="color: #4CAF50;">#4CAF50</span> - Used for headings and accents.</p>
-            <p><strong>Secondary Color:</strong> <span style="color: #f9f9f9;">#f9f9f9</span> - Used for the background of the body.</p>
+            <p><strong>Primary Color:</strong> <span style="color: #00646F;">Skobeloff</span> - Used for headings and accents.</p>
+            <p><strong>Secondary Color:</strong> <span style="color: #CA910D"> Chinese Gold</span> - Used for buttons, link hover effect.</p>
+            <p><strong>Background Color:</strong> <span style="color: #ffffff;">White</span> - Used for background</p>
+            <p><strong>Text Color:</strong> <span style="color: #333333;">Black</span> - Used for body text to ensure good contrast and readability.</p>
         </section>
 
         <section>
             <h2>Typography</h2>
             <p><strong>Font Selections:</strong></p>
             <ul>
-                <li><strong>Arial:</strong> Used for body text to ensure readability.</li>
-                <li><strong>Georgia:</strong> Used for headings to add elegance and contrast.</li>
-                <li><strong>Verdana:</strong> Used for buttons and calls to action for clarity.</li>
+                <li><strong>Roboto:</strong> Used for body text to ensure readability. <span style="font-family: 'Roboto', sans-serif;">Example text</span></li>
+                <li><strong>Georgia:</strong> Used for headings to add elegance and contrast. <span style="font-family: 'Georgia';">Example text</span></li>
+                <li><strong>Verdana:</strong> Used for buttons and calls to action for clarity. <span style="font-family: 'Verdana';">Example text</span></li>      
             </ul>
         </section>
 
         <section>
             <h2>Wireframe</h2>
-            <p><strong>Mobile View:</strong> A vertical layout with a single column for easy scrolling, featuring a header, recipe categories, popular recipes, and a footer.</p>
-            <p><strong>Desktop View:</strong> A horizontal layout with multiple columns, including a header, side navigation for categories, main content area for popular recipes, and a footer.</p>
+            <p><strong>Mobile View:</strong> A vertical layout with a single column, hero image for easy scrolling, featuring a header, recipe categories, popular recipes, and a footer.</p>
+            <img src="images/mobile.png" alt="Mobile View">
+            <p><strong>Desktop View:</strong> A horizontal layout with multiple columns, including a header, hero image side navigation for categories, main content area for popular recipes, and a footer.</p>
+            <img src="images/desktop.png" alt="Desktop View">
         </section>
+
+        <section >
+            <div id="home">
+                <h2>Home</h2>
+                <p>Return to the main page of the site, where you can find featured recipes and updates.</p>
+            </div>
+        
+            <div id="places">
+                <h2>Places</h2>
+                <p>Explore various cultural regions and their unique culinary traditions and influences.</p>
+            </div>
+    
+            <div id="recipes">
+                <h2>Recipes</h2>
+                <p>Browse a collection of family recipes organized by category and cultural origin.</p>
+            </div>
+    
+            <div id="your-recipe">
+                <h2>Your Recipe</h2>
+                <p>Submit your own recipe via form to share with the community and celebrate your culinary heritage.</p>
+            </div>
+        </section>   
+
+
     </main>
 
     <footer>
