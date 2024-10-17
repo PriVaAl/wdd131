@@ -16,74 +16,88 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Product Review Form</h1>
-    </header>
-    <main>
-        <form method="get" action="review.html">
-            <div id="item">
-                <label for="product_name">Product Name</label>
-                <select id="product_name" name="product_name" required>
-                    <option value="" selected disabled>Select a Product ...</option>
-                </select>
-            </div>
+    
+    <div class="wrapper">
+        <header>
+            <h1>Product Review Form</h1>
+        </header>    
+    
 
-            <div class="item">
-                <p>Overall Rating</p>
-                <div id="radio">
-                    <label for="overall-1">&star;</label>
-                    <label for="overall-2">&star;&star;</label>
-                    <label for="overall-3">&star;&star;&star;</label>
-                    <label for="overall-4">&star;&star;&star;&star;</label>
-                    <label for="overall-5">&star;&star;&star;&star;&star;</label>
+        <main>
+            <form method="get" action="review.html" class="wf1">
+                <fieldset id="item">
+                    <label for="product_name">Product Name<select id="product_name" name="product_name" required>
+                        <option value="" selected disabled>Select a Product ...</option>
+                    </select></label>
+                </fieldset>
 
-                    <input type="radio" id="overall-1" name="overall" required>
-                    <input type="radio" id="overall-2" name="overall" required>
-                    <input type="radio" id="overall-3" name="overall" required>
-                    <input type="radio" id="overall-4" name="overall" required>
-                    <input type="radio" id="overall-5" name="overall" required>
-                </div>
-            </div>
-    
-            <div class="item">
-                <label for="installation-date">Date of Installation
-                <input type="date" id="install" name="install" required></label>
-            </div>
-    
-            <div class="item">
-                <p>Which inputs did you find useful in the product?
-                    <em>(Check all that apply)</em>
-                </p>
-                <div class="checkbox-group">
-                    <input type="checkbox" id="durability" name="durability" value="durability">
-                    <label for="durability">Durability </label>
-                    <input type="checkbox" id="ease" name="ease" value="ease">
-                    <label for="ease">Ease of Use</label>
-                    <input type="checkbox" id="design" name="design" value="design">
-                    <label for="design">Design</label>
-                </div>
-            </div>
-    
-            <div class="item">
-                <label for="review">Written Review:<span class="small">(Optional)</span></label>
-                <textarea id="review" name="review"></textarea>
-            </div>
-    
-            <div class="item">
-                <label for="user">Your Name:<span class="small">(Optional)</span></label>
-                <input type="text" id="user" name="user">
-            </div>
-    
-            
-            <input type="submit" value="Post Review">
-        </form>
-    </main>
-    <footer>
-        <p>
-            &copy; <span id="currentyear"></span> 🌼 Priscilla Valverde Álvarez, Costa Rica 🌼
-        </p>
-        <p id="lastModified">
-        </p>
-    </footer>
+                <fieldset class="item">
+                    <legend>Overall Rating</legend>
+                    <div id="radio">
+                        <label for="overall-1">
+                            <span>&star;</span>
+                            <input type="radio" id="overall-1" name="overall" required>
+                        </label>
+                        <label for="overall-2">
+                            <span>&star;&star;</span>
+                            <input type="radio" id="overall-2" name="overall" required>
+                        </label>
+                        <label for="overall-3">
+                            <span>&star;&star;&star;</span>
+                            <input type="radio" id="overall-3" name="overall" required>
+                        </label>
+                        <label for="overall-4">
+                            <span>&star;&star;&star;&star;</span>
+                            <input type="radio" id="overall-4" name="overall" required>
+                        </label>
+                        <label for="overall-5">
+                            <span>&star;&star;&star;&star;&star;</span>
+                            <input type="radio" id="overall-5" name="overall" required>
+                        </label>   
+                    </div>
+                </fieldset>
+                
+        
+                <fieldset class="item">
+                    <label for="installation-date">Date of Installation
+                    <input type="date" id="install" name="install" required></label>
+                </fieldset>
+        
+                <fieldset class="features">
+                    <legend>Which inputs did you find useful in the product?
+                        <em>(Check all that apply)</em>
+                    </legend>
+                    <div class="checkbox-group">
+                        <label for="durability"><input type="checkbox" id="durability" name="durability" value="durability">
+                        Durability </label>
+                        <label for="ease"><input type="checkbox" id="ease" name="ease" value="ease">
+                        Ease of Use</label>
+                        <label for="design"><input type="checkbox" id="design" name="design" value="design">
+                        Design</label>
+                    </div>
+                </fieldset>
+        
+                <fieldset class="item">
+                    <label for="review">Written Review:<span class="small">(Optional)</span></label>
+                    <textarea id="review" name="review"></textarea>
+                </fieldset>
+        
+                <fieldset class="item">
+                    <label for="user">Your Name:<span class="small">(Optional)</span></label>
+                    <input type="text" id="user" name="user">
+                </fieldset>
+        
+                
+                <input type="submit" value="Post Review">
+            </form>
+        </main>
+        <footer>
+            <p>
+                &copy; <span id="currentyear"></span> 🌼 Priscilla Valverde Álvarez, Costa Rica 🌼
+            </p>
+            <p id="lastModified">
+            </p>
+        </footer>
+    </div>
 </body>
 </html>
