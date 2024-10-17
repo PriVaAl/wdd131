@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore key concepts in WDD 131 - Dynamic Web Fundamentals with Priscilla Valverde Álvarez. Creating a  product review form page using good form design given specific
+    field requirements and submission confirmation with a counter.">
+    <meta name="author" content="Priscilla Valverde Alvarez">
+    <title>WDD 131 - Dynamic Web Fundamentals - Product Review Form - Priscilla Valverde Álvarez</title>
+    
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script> 
+    <script src="scripts/getdates.js" defer></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <div id="item">
+                <label for="product_name">Product Name</label>
+                <select id="product_name" name="product_name" required>
+                    <option value="" selected disabled>Select a Product ...</option>
+                </select>
+            </div>
+
+            <div class="item">
+                <p>Overall Rating</p>
+                <div id="radio">
+                    <label for="overall-1">&star;</label>
+                    <label for="overall-2">&star;&star;</label>
+                    <label for="overall-3">&star;&star;&star;</label>
+                    <label for="overall-4">&star;&star;&star;&star;</label>
+                    <label for="overall-5">&star;&star;&star;&star;&star;</label>
+
+                    <input type="radio" id="overall-1" name="overall" required>
+                    <input type="radio" id="overall-2" name="overall" required>
+                    <input type="radio" id="overall-3" name="overall" required>
+                    <input type="radio" id="overall-4" name="overall" required>
+                    <input type="radio" id="overall-5" name="overall" required>
+                </div>
+            </div>
+    
+            <div class="item">
+                <label for="installation-date">Date of Installation
+                <input type="date" id="install" name="install" required></label>
+            </div>
+    
+            <div class="item">
+                <p>Which inputs did you find useful in the product?
+                    <em>(Check all that apply)</em>
+                </p>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="durability" name="durability" value="durability">
+                    <label for="durability">Durability </label>
+                    <input type="checkbox" id="ease" name="ease" value="ease">
+                    <label for="ease">Ease of Use</label>
+                    <input type="checkbox" id="design" name="design" value="design">
+                    <label for="design">Design</label>
+                </div>
+            </div>
+    
+            <div class="item">
+                <label for="review">Written Review:<span class="small">(Optional)</span></label>
+                <textarea id="review" name="review"></textarea>
+            </div>
+    
+            <div class="item">
+                <label for="user">Your Name:<span class="small">(Optional)</span></label>
+                <input type="text" id="user" name="user">
+            </div>
+    
+            
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> 🌼 Priscilla Valverde Álvarez, Costa Rica 🌼
+        </p>
+        <p id="lastModified">
+        </p>
+    </footer>
+</body>
+</html>
