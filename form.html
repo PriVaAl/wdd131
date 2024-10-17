@@ -27,13 +27,14 @@
         <main>
             <form method="get" action="review.html" class="wf1">
                 <fieldset id="item">
-                    <label for="product_name">Product Name<select id="product_name" name="product_name" required>
+                    <label for="product_name">Product Name<br></br><select id="product_name" name="product_name" required>
+                        
                         <option value="" selected disabled>Select a Product ...</option>
                     </select></label>
                 </fieldset>
 
                 <fieldset class="item">
-                    <legend>Overall Rating</legend>
+                    <legend>Overall Rating</legend><br>
                     <div id="radio">
                         <label for="overall-1">
                             <span>&star;</span>
@@ -60,13 +61,13 @@
                 
         
                 <fieldset class="item">
-                    <label for="install">Date of Installation
+                    <label for="install">Date of Installation <br></br>
                     <input type="date" id="install" name="install" required></label>
                 </fieldset>
         
                 <fieldset class="features">
-                    <legend>Which inputs did you find useful in the product?
-                        <em>(Check all that apply)</em>
+                    <legend>Which inputs did you find useful in the product? 
+                        <em>(Check all that apply)</em><br></br>
                     </legend>
                     <div class="checkbox-group">
                         <label for="design"><input type="checkbox" id="design" name="design" value="design">
@@ -82,16 +83,15 @@
                 </fieldset>
         
                 <fieldset class="item">
-                    <label for="review">Written Review:<span class="small">(Optional)</span></label>
+                    <label for="review">Written Review:<span class="small">(Optional)</span></label><br>
                     <textarea id="review" name="review"></textarea>
                 </fieldset>
         
                 <fieldset class="item">
-                    <label for="user">Your Name:<span class="small">(Optional)</span></label>
+                    <label for="user">Your Name:<span class="small">(Optional)</span></label><br>
                     <input type="text" id="user" name="user">
                 </fieldset>
         
-                
                 <input type="submit" value="Post Review">
             </form>
         </main>
