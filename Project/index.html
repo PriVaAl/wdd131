@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Heritage Kitchen - Celebrate culinary traditions with a collection of personal recipes from various ethnicities.">
+    <meta name="author" content="Priscilla Valverde">
+    <title>Home | Heritage Kitchen</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400&family=Georgia:wght@700&family=Verdana:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Heritage Kitchen</h1>
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="places.html">Places</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="submit-recipe.html">Your Recipe</a></li>
+            </ul>
+        </nav>        
+    </header>
+
+    <main>
+        <section class="intro">
+            <img src="images/healthy-food.webp" alt="Hero image" class="hero-img"> <!-- Image directly in HTML -->
+            <h2>Welcome to Heritage Kitchen</h2>
+            <p>At Heritage Kitchen, we celebrate culinary traditions from around the world. Explore family recipes, discover the history behind your favorite dishes, and share your own culinary heritage with the community.</p>
+        </section>
+
+        <section class="featured-recipes">
+            <h2>Featured Recipes</h2>
+            <div class="recipes-grid">
+                <div class="recipe-card">
+                    <h3>Italian Lasagna</h3>
+                    <img src="images/lasagna.jpg" alt="Italian Lasagna">
+                    <p>A traditional family recipe with layers of pasta, cheese, and rich meat sauce.</p>
+                </div>
+                <div class="recipe-card">
+                    <h3>Chinese Jiao Zi</h3>
+                    <img src="images/jiaozi.jpg" alt="Chinese Jiao Zi">
+                    <p>Fresh and delicious sushi gioza made with  pork and chinese cabage.</p>
+                </div>
+                <div class="recipe-card">
+                    <h3>Caribean Rice and Beans</h3>
+                    <img src="images/riceandbeans.jpg" alt="Rice and Beans">
+                    <p>Spicy and flavorful, Caribean recipe of rice, beans and meat.</p>
+                </div>
+                <div class="recipe-card">
+                    <h3>Persian Jujeh Kebab</h3>
+                    <img src="images/Jujeh Kebab.jpg" alt="Persian Jujeh Kebab">
+                    <p>Grilled chicken is eaten with grilled tomatoes, saffron rice, and butter.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="places-intro">
+            <h2>Explore Culinary Traditions</h2>
+            <div class="places-content">
+                <div class="places-left">
+                    <img src="images/traditions.jpg" alt="Culinary traditions image" class="places-img">
+                </div>
+                <div class="places-right">
+                    <p>Discover the rich cultural heritage behind the world’s most loved dishes. From the bustling streets of Southeast Asia to the heartwarming kitchens of Europe, our "Places" section invites you to dive into the stories behind each region’s unique flavors.</p>
+                    <a href="places.html" class="cta">Discover Places</a>
+                </div>
+            </div>
+        </section>
+    
+        <section class="join-community">
+            <h2>Share Your Family Recipes</h2>
+            <p>Do you have a family recipe that’s been passed down through generations? Join the Heritage Kitchen community and share your story with food lovers around the world. Contribute to the collection by submitting your own recipe today!</p>
+            <img src="images/join-us.jpg" alt="Join Us" class="community-img"> 
+            <a href="submit-recipe.html" class="cta">Submit Your Recipe</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Heritage Kitchen. All rights reserved. | Priscilla Valverde</p>
+    
+        <p id="lastModified"></p>
+    </footer>
+
+    
+</body>
+</html>
