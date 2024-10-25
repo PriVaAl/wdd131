@@ -31,6 +31,47 @@
             <h2>Leave a Trace</h2>
             <p>At Heritage Kitchen, we celebrate culinary traditions from around the world. Explore family recipes, discover the history behind your favorite dishes, and share your own culinary heritage with the community.</p>
         </section>
+        <div class="wrapper">
+            <header>
+                <h1>Add Your Recipe</h1>
+            </header>    
+    
+    
+            <form method="get" action="recipe.html" class="wf1">
+                <fieldset class="item">
+                    <label for="first_name">First Name:<span class="small">*</span></label>
+                    <input type="text" id="first_name" name="first_name" required>                   
+                </fieldset>
+    
+                <fieldset class="item">
+                    <label for="last_name">Last Name:<span class="small">*</span></label>
+                    <input type="text" id="last_name" name="last_name" required>
+                </fieldset>
+    
+                <fieldset class="item">
+                    <label for="email">Email Address:<span class="small">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+    
+                <fieldset class="item">
+                    <label for="country">Country:<span class="small">*</span></label>
+                    <input type="text" id="country" name="country" required>
+                </fieldset>
+    
+                <fieldset class="item">
+                    <label for="recipe">Recipe:<span class="small">*</span></label>
+                    <textarea id="recipe" name="recipe" required></textarea>
+                </fieldset>
+    
+                <fieldset class="item">
+                    <label for="feedback">What did you think about the recipe?<span class="small">(Optional)</span></label>
+                    <textarea id="feedback" name="feedback"></textarea>
+                </fieldset>
+    
+                <input type="submit" value="Submit Recipe">
+            </form>
+    
+        </div>
     </main>
     <footer>
         <p>&copy;<span id="currentyear"></span> Heritage Kitchen. All rights reserved. | Priscilla Valverde</p>

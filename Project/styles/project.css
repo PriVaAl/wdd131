@@ -8,8 +8,6 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #ffffff;
     color: #333333;
-    margin: 0;
-    padding: 0;
 }
 
 header {
@@ -25,7 +23,6 @@ header, main {
 }
 
 h1 {
-    text-align: left;
     color: white;
     font-size: 36px;
 }
@@ -42,13 +39,11 @@ h1 {
 
 #menu::before {
     content: "☰";
-    color:white;
 }
 
 #menu.open::before {
     content: "X";
 }
-
 
 .navigation {
     display: flex;
@@ -94,10 +89,10 @@ h2 {
 
 .hero-img {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
     object-fit: cover;
     opacity: 0.5; 
     z-index: -1; 
@@ -248,6 +243,176 @@ h2 {
     border: 2px solid #CA910D;
 }
 
+.places {
+    margin: 2rem 0;
+}
+
+.places h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+.place {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "flag"
+        "image"
+        "content";
+    text-align: center;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    border: 4px solid #00646F;
+    box-shadow: 0 2px 4px #CA910D;
+}
+
+.flag img, .image img {
+    max-width: 250px;
+    border-radius: 8px;
+}
+
+.flag {
+    text-align: center;
+    display: none;
+}
+
+.content h3 {
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color:#CA910D;
+}
+
+.content p {
+    font-family: 'Verdana', sans-serif;
+    font-size: 1rem;
+    color: #333;
+}
+
+.image img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px #CA910D;
+}
+
+.wrapper {
+    max-width: 24rem; 
+    margin: auto; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px #CA910D;
+    background-color: rgb(248, 246, 233);
+}
+
+.wf1 {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+
+} 
+
+.wf1 fieldset {
+    border: none;
+    margin: 2rem 0;
+    width: 100%;
+    max-width: 450px;
+}
+
+.wf1 legend {
+    display: block;
+    color: black;
+    padding: 0 .5rem;
+    font-weight: bold;
+}
+
+.wf1 label {
+    font-weight: bold;
+    display: block;
+    padding: 0 .5rem;
+    font-size: .9rem;
+    color: black;
+}
+
+.wf1 em {
+    padding: 0 .5rem;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    display: block;
+    font-size: .9rem;
+    padding-top: .5rem;
+    color: black;
+    width: 100%;
+    border-radius: 6px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.small {
+    color: #00646F;
+    font-size: small;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="email"],
+.wf1 textarea {
+    background-color: white;
+    display: block;
+    border: solid 1px #CA910D;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 450px;
+}
+
+.wf1 input[type="submit"] {
+    background-color:  #CA910D;
+    border: solid 3px #00646F;
+    color: white;
+    padding: .8rem;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 450px;
+    margin-left: 0;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.wf1 textarea {
+    width: 100%;
+    max-width: 450px;
+    height: 100%;
+    min-height: 100px;
+}
+
+.wf1 input[type="submit"]:hover {
+    background-color: #00646F;
+    color: white;
+}
+
+.wf1 input:required {
+    border-bottom: solid 8px #CA910D;
+}
+
+.wf1 input:required:valid {
+    border-bottom: solid 8px #00646F;
+}
+
+
 footer {
     background-color: #00646F;
     color: white;
@@ -324,6 +489,15 @@ footer p {
     .recipe-card {
         width: 300px;
     }
+    
+    .place {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .flag {
+        display: block;
+    }
 }
 
 @media (max-width: 740px) {
@@ -335,6 +509,7 @@ footer p {
     h2 {
         grid-column: span 1;
     }
+
     
 }
 
