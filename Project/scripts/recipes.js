@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   
   const headerDynamic2 = document.getElementById('headerDynamic2');
-  const defaultHeaderText = 'China';
+  const defaultHeaderText = 'All';
 
   const savedHeaderText = localStorage.getItem('headerDynamicText') || defaultHeaderText;
 
@@ -50,7 +50,7 @@ const recipes = [
     },
     {
       name: "Caribbean Rice and Beans",
-      country: "Caribbean",
+      country: "Costa Rica",
       mealType: "Dinner",
       ingredients: ["White rice", "Red beans", "Coconut milk", "Onion", "Garlic", "Bell pepper", "Spices (thyme, allspice)"],
       procedure: ["Sauté onion and garlic until soft.", "Add beans, rice, coconut milk, and spices.", "Cook until rice is tender and liquid is absorbed."],
