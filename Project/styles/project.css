@@ -99,6 +99,8 @@ h2 {
 .intro h2, .intro p {
     position: relative; 
     z-index: 1; 
+    color:black;
+    font-weight: bold;
 }
 
 .intro h2 {
