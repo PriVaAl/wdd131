@@ -37,38 +37,40 @@
             </header>    
     
     
-            <form method="get" action="recipe.html" class="wf1">
+            <form method="get" action="thankyou.html" class="wf1">
                 <fieldset class="item">
-                    <label for="first_name">First Name:<span class="small">*</span></label>
+                    <label for="first_name">First Name:<span class="small">*</span></label><br>
                     <input type="text" id="first_name" name="first_name" required>                   
                 </fieldset>
     
                 <fieldset class="item">
-                    <label for="last_name">Last Name:<span class="small">*</span></label>
+                    <label for="last_name">Last Name:<span class="small">*</span></label><br>
                     <input type="text" id="last_name" name="last_name" required>
                 </fieldset>
     
                 <fieldset class="item">
-                    <label for="email">Email Address:<span class="small">*</span></label>
+                    <label for="email">Email Address:<span class="small">*</span></label><br>
                     <input type="email" id="email" name="email" required>
                 </fieldset>
     
                 <fieldset class="item">
-                    <label for="country">Country:<span class="small">*</span></label>
-                    <input type="text" id="country" name="country" required>
+                    <label for="country">Country:<span class="small">*</span></label><br>
+                    <select id="country" name="country" required>
+                        <option value="" disabled selected>Select your country</option>
+                    </select>
                 </fieldset>
     
                 <fieldset class="item">
-                    <label for="recipe">Recipe:<span class="small">*</span></label>
+                    <label for="recipe">Recipe:<span class="small">*</span></label><br>
                     <textarea id="recipe" name="recipe" required></textarea>
                 </fieldset>
     
                 <fieldset class="item">
-                    <label for="feedback">What did you think about the recipe?<span class="small">(Optional)</span></label>
+                    <label for="feedback">What did you think about the recipe?<span class="small">(Optional)</span></label><br>
                     <textarea id="feedback" name="feedback"></textarea>
                 </fieldset>
     
-                <input type="submit" value="Submit Recipe">
+                <input type="submit" value="Share My Recipe">
             </form>
     
         </div>

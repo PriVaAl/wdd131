@@ -378,7 +378,8 @@ textarea {
 
 .wf1 input[type="text"],
 .wf1 input[type="email"],
-.wf1 textarea {
+.wf1 textarea, 
+.wf1 select  {
     background-color: white;
     display: block;
     border: solid 1px #CA910D;
@@ -422,6 +423,28 @@ textarea {
 
 .wf1 input:required:valid {
     border-bottom: solid 8px #00646F;
+}
+
+.thanks p {
+    text-align: center;
+    font-size: large;
+    padding: 10px;
+}
+
+.back {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f04e23;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    align-content: center;
+}
+
+.back:hover {
+    background-color: #CA910D;
 }
 
 

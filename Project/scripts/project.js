@@ -46,4 +46,30 @@ document.addEventListener('DOMContentLoaded', function() {
         item.addEventListener('click', handleMenuItemClick);
     });
 });
+const countries = [
+    { id: "us", name: "United States" },
+    { id: "ca", name: "Canada" },
+    { id: "mx", name: "Mexico" },
+    { id: "jp", name: "Japan" },
+    { id: "fr", name: "France" },
+    { id: "de", name: "Germany" },
+    { id: "an", name: "Another" }
+];
 
+
+const countrySelect = document.getElementById("country");
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    countries.forEach(country => {
+        const option = document.createElement("option");
+        option.value = country.id; 
+        option.textContent = country.name;
+        countrySelect.appendChild(option);
+    });
+});
+
+let submissions = Number(window.localStorage.getItem("submissions")) || 0;
+submissions++;
+window.localStorage.setItem("submissions", submissions);
+document.getElementById("count").textContent = submissions;
