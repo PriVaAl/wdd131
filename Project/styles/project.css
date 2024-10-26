@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #00646F;
+    background-color: #005761;
     padding: 20px;
     text-align: center;
     display: grid;
@@ -60,7 +60,7 @@ h1 {
 }
 
 .navigation a:hover {
-    background-color: #CA910D;
+    background-color: #FBF3DB;
     border-radius: 5px;
     text-decoration: underline;
     font-weight: 700;
@@ -75,7 +75,7 @@ ul {
 
 h2 {
     font-family: 'Georgia', serif;
-    color: #00646F; 
+    color: #005761; 
 }
 
 .intro {
@@ -133,7 +133,7 @@ h2 {
 }
 
 .recipe-card {
-    border: 2px solid #CA910D;
+    border: 2px solid #FBF3DB;
     border-radius: 8px;
     overflow: hidden;
     width: 300px;
@@ -142,7 +142,7 @@ h2 {
 
 .recipe-card h3 {
     padding: 1rem;
-    background-color: #00646F;
+    background-color: #005761;
     color: white;
     margin: 0;
     text-align: center;
@@ -201,7 +201,7 @@ h2 {
     max-width: 50%;
     height: auto;
     border-radius: 8px;
-    border: 2px solid #CA910D; 
+    border: 2px solid #FBF3DB; 
 }
 
 .places-right h2 {
@@ -226,7 +226,7 @@ h2 {
 }
 
 .cta:hover {
-    background-color: #CA910D;
+    background-color: #FBF3DB;
 }
 
 .join-community {
@@ -253,7 +253,7 @@ h2 {
     max-width: 25%;
     height: auto;
     border-radius: 8px;
-    border: 2px solid #CA910D;
+    border: 2px solid #FBF3DB;
 }
 
 .places {
@@ -279,8 +279,8 @@ h2 {
     padding: 1rem;
     background-color: white;
     border-radius: 8px;
-    border: 4px solid #00646F;
-    box-shadow: 0 2px 4px #CA910D;
+    border: 4px solid #005761;
+    box-shadow: 0 2px 4px #FBF3DB;
 }
 
 .flag img, .image img {
@@ -296,7 +296,7 @@ h2 {
     font-family: 'Georgia', serif;
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    color:#CA910D;
+    color:#FBF3DB;
 }
 
 .content p {
@@ -309,14 +309,14 @@ h2 {
     max-width: 250px;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 2px 4px #CA910D;
+    box-shadow: 0 2px 4px #FBF3DB;
 }
 
 .wrapper {
     max-width: 24rem; 
     margin: auto; 
     border-radius: 8px;
-    box-shadow: 0 2px 4px #CA910D;
+    box-shadow: 0 2px 4px #FBF3DB;
     background-color: rgb(248, 246, 233);
 }
 
@@ -372,7 +372,7 @@ textarea {
 }
 
 .small {
-    color: #00646F;
+    color: #005761;
     font-size: small;
 }
 
@@ -382,7 +382,7 @@ textarea {
 .wf1 select  {
     background-color: white;
     display: block;
-    border: solid 1px #CA910D;
+    border: solid 1px #FBF3DB;
     border-radius: 6px;
     padding: .75rem;
     color: #555;
@@ -391,8 +391,8 @@ textarea {
 }
 
 .wf1 input[type="submit"] {
-    background-color:  #CA910D;
-    border: solid 3px #00646F;
+    background-color:  #FBF3DB;
+    border: solid 3px #005761;
     color: white;
     padding: .8rem;
     border-radius: 6px;
@@ -413,16 +413,16 @@ textarea {
 }
 
 .wf1 input[type="submit"]:hover {
-    background-color: #00646F;
+    background-color: #005761;
     color: white;
 }
 
 .wf1 input:required {
-    border-bottom: solid 8px #CA910D;
+    border-bottom: solid 8px #FBF3DB;
 }
 
 .wf1 input:required:valid {
-    border-bottom: solid 8px #00646F;
+    border-bottom: solid 8px #005761;
 }
 
 .thanks p {
@@ -444,12 +444,12 @@ textarea {
 }
 
 .back:hover {
-    background-color: #CA910D;
+    background-color: #FBF3DB;
 }
 
 
 footer {
-    background-color: #00646F;
+    background-color: #005761;
     color: white;
     text-align: center;
     padding: 1rem 0;
@@ -462,7 +462,7 @@ footer p {
 
 #lastModified {
     font-size: 1rem;
-    color: #CA910D;
+    color: #FBF3DB;
 }
 
 @media screen and (min-width: 740px) {
