@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #00646F;
+    background-color: #00373D;
     padding: 20px;
     text-align: center;
     display: grid;
@@ -59,7 +59,7 @@ h1 {
 }
 
 .navigation a:hover {
-    background-color: #CA910D;
+    background-color: #F5C32E;
     border-radius: 5px;
     text-decoration: underline;
     font-weight: 700;
@@ -82,7 +82,7 @@ main {
 
 h2 {
     font-family: 'Georgia', serif;
-    color: #00646F; 
+    color: #00373D; 
 }
 
 .intro {
@@ -149,7 +149,7 @@ nav {
 .secondary-navigation {
     display: flex;
     flex-direction: column;
-    background-color: #CA910D; 
+    background-color: #F5C32E; 
     color: white;
 }
 
@@ -186,7 +186,7 @@ main div {
 }
 
 .res-grid section {
-    border: 1px solid #CA910D;
+    border: 1px solid #F5C32E;
     padding:10px 30px;
     border-radius: 8px;
     background-color: #f9f9f9;
@@ -210,7 +210,7 @@ img {
     max-width: 100%;
     max-height: 200px;
     display: block;
-    border: 2px solid #CA910D;
+    border: 2px solid #F5C32E;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -220,7 +220,7 @@ h3, h4 {
 }
 
 footer {
-    background-color: #00646F;
+    background-color: #00373D;
     color: white;
     text-align: center;
     padding: 1rem 0;
@@ -233,7 +233,7 @@ footer p {
 
 #lastModified {
     font-size: 1rem;
-    color: #CA910D;
+    color: #F5C32E;
 }
 
 
