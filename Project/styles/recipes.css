@@ -106,11 +106,14 @@ h2 {
 .intro h2, .intro p {
     position: relative; 
     z-index: 1; 
+    
 }
 
 .intro h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+
+
 }
 
 .intro p {
@@ -183,17 +186,19 @@ main div {
 }
 
 .res-grid section {
-    border: 1px solid #ccc;
-    padding: 16px;
+    border: 1px solid #CA910D;
+    padding:10px 30px;
     border-radius: 8px;
     background-color: #f9f9f9;
     height: 100%;
-    text-align: center;
+
+    align-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 section .label {
     font-size: small;
+    font-weight: bold;
 }
 
 section p {
@@ -202,11 +207,16 @@ section p {
 
 img {
     margin-top: 1rem;
-    width: 250px;
-    height: auto;
+    max-width: 100%;
+    max-height: 200px;
     display: block;
-    border: 2px solid lightgray;
+    border: 2px solid #CA910D;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h3, h4 {
+    text-align: center;
+    margin: 10px;
 }
 
 footer {

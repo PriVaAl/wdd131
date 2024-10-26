@@ -34,7 +34,7 @@ const recipes = [
       name: "Italian Lasagna",
       country: "Italy",
       mealType: "Dinner",
-      ingredients: ["Pasta sheets", "Ground beef", "Tomato sauce", "Ricotta cheese", "Mozzarella cheese", "Parmesan cheese", "Herbs and spices"],
+      ingredients: ["Pasta sheets", "Ground beef", "Tomato sauce", "Ricotta, Mozzarella,Parmesan cheese", "Herbs and spices"],
       procedure: ["Cook the ground beef until browned.", "Layer pasta sheets, meat sauce, ricotta, and mozzarella in a baking dish.", "Repeat layers until ingredients are used.", "Top with Parmesan and bake at 375°F for 45 minutes."],
       imageUrl: "https://www.thewholesomedish.com/wp-content/uploads/2018/07/Best-Lasagna-550-500x375.jpg",
       description: "A traditional family recipe with layers of pasta, cheese, and rich meat sauce."
@@ -79,8 +79,8 @@ const recipes = [
       name: "Chinese Kung Pao Chicken",
       country: "China",
       mealType: "Lunch",
-      ingredients: ["Chicken breast", "Peanuts", "Bell peppers", "Green onions", "Ginger", "Garlic", "Soy sauce", "Vinegar", "Sugar"],
-      procedure: ["Marinate chicken in soy sauce.", "Stir-fry chicken, ginger, and garlic.", "Add bell peppers, green onions, and peanuts.", "Pour sauce mixture and cook until thickened."],
+      ingredients: ["Chicken breast", "Peanuts", "Bell peppers, Green onions", "Ginger, Garlic", "Soy sauce, Vinegar, Sugar"],
+      procedure: ["Marinate chicken in soy sauce.", "Stir-fry chicken, ginger, garlic, bell peppers, green onions, and peanuts.", "Pour sauce mixture and cook until thickened."],
       imageUrl: "https://www.cookhomey.com/wp-content/uploads/Recipe-for-Kung-Pao-Chicken.jpg",
       description: "Spicy stir-fried chicken with peanuts, vegetables, and a flavorful sauce."
     },
