@@ -31,7 +31,7 @@ h1 {
     font-size: 1.5rem;
     background: none;
     border: 0;
-    color: #000;
+    color: white;
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -66,19 +66,17 @@ h1 {
     font-weight: 700;
 }
 
+ul {
+    list-style: none;
+}
 .open a {
     display: block;
-}
-
-ul {
-    list-style-type: none;
 }
 
 h2 {
     font-family: 'Georgia', serif;
     color: #00646F; 
 }
-
 
 .intro {
     position: relative;
@@ -158,6 +156,21 @@ h2 {
 
 .recipe-card p {
     padding: 1rem;
+    text-align: center;
+}
+
+.recipe-card ul {
+    text-align: left;
+    list-style-type:armenian;
+    padding: 10px;
+}
+
+.recipe-card li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.recipe-card h4 {
     text-align: center;
 }
 
@@ -276,7 +289,6 @@ h2 {
 }
 
 .flag {
-    text-align: center;
     display: none;
 }
 
@@ -468,7 +480,7 @@ footer p {
     }
 
     .places-intro {
-        grid-template-columns: 1fr; /* Stacks the image and text on smaller screens */
+        grid-template-columns: 1fr; 
         text-align: center;
     }
 
@@ -490,6 +502,10 @@ footer p {
         width: 300px;
     }
     
+    .recipe-card ul {
+        list-style: armenian;
+    }
+
     .place {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -498,6 +514,7 @@ footer p {
     .flag {
         display: block;
     }
+
 }
 
 @media (max-width: 740px) {
